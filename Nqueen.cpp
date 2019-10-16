@@ -32,9 +32,10 @@ bool isSafe(int board[N][N], int row, int col)
 bool solvenqutil(int board[N][N], int col) 
 { 
 
-    if (col >= N) 
+    if (col == N) 
+    {   print(board);
         return true; 
-  
+    }
     for (int i = 0; i < N; i++) { 
         if (isSafe(board, i, col)) { 
 
